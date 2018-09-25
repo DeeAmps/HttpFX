@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="787.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="httpfx.IndexController">
+    <stylesheets>
+        <URL value="@index.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="40.0" layoutY="61.0" text="Server Port" />
+      <Button fx:id="startServer" layoutX="503.0" layoutY="56.0" mnemonicParsing="false" onAction="#StartServer" prefHeight="39.0" prefWidth="103.0" text="Start" />
+      <Button fx:id="stopServer" disable="true" layoutX="633.0" layoutY="56.0" mnemonicParsing="false" onAction="#StopServer" prefHeight="39.0" prefWidth="103.0" text="Stop" />
+      <Label layoutX="40.0" layoutY="143.0" text="Server Home" />
+      <ListView fx:id="serverHome" layoutX="40.0" layoutY="170.0" prefHeight="362.0" prefWidth="276.0" />
+      <Label layoutX="356.0" layoutY="143.0" text="Server Logs" />
+      <TextArea fx:id="serverLogs" editable="false" layoutX="356.0" layoutY="170.0" prefHeight="362.0" prefWidth="401.0" />
+      <TextField fx:id="port" layoutX="153.0" layoutY="56.0" prefHeight="39.0" prefWidth="291.0" />
+   </children>
+</AnchorPane>
